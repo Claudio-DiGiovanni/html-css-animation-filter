@@ -1,0 +1,174 @@
+.ex-1-square:hover{
+    background-color: red;
+    transition: all 3s;
+}
+
+.ex-2-square:active{
+    width: 100%;
+    transition: 3s;
+}
+
+.ex-3-square:hover{
+    border-radius: 50%;
+    transition: 3s;
+}
+
+.ex-4-square:hover{
+    transition: 3s;
+    opacity: 0;
+}
+
+.ex-5-square:hover{
+    transition: 3s;
+    scale: 2;    
+}
+
+.ex-5-square:active{
+    transition: 3s;
+    scale: 0.5;    
+}
+
+.ex-6-img:hover{
+    filter: grayscale(100%);
+}
+
+.ex-7-img:hover{
+    transition: 3s;
+    filter: sepia(100%);
+    filter: grayscale(80%);
+}
+
+.ex-8-img:hover{
+    transition: 3s;
+    filter: sepia(100%);
+    filter: grayscale(80%);
+    border-radius: 100px;
+    
+}
+
+
+.ex-9-img:hover{
+    transition: 3s;
+    filter: sepia(100%);
+    filter: grayscale(80%);
+    border-radius: 100px;
+    scale: 2;
+}
+
+.ex-10-icon{
+    animation: infinite 3s spin;
+}
+
+@keyframes spin {
+       100%{ 
+        transform: rotate(359deg)
+       }
+}
+
+.ex-11-icon:hover{
+    animation: infinite 3s spin2;
+}
+
+@keyframes spin2 {
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }    
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: normal 3s btnhover1;
+}
+
+@keyframes btnhover1 {
+    0%{
+        right: 15%;
+    }
+    50%{
+        right: 50%;
+    }
+    100%{
+        right: 15%;
+    }
+}
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: normal 3s btnhover2;
+}
+
+
+@keyframes btnhover2 {
+    0%{
+        left: 15%;
+    }
+    50%{
+        left: 50%;
+    }
+    100%{
+        left: 15%;
+    }
+}
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: infinite 3s spinwhite1;
+}
+
+@keyframes spinwhite1 {
+    0%{
+        left: 10%;
+        top: -10px;
+    }
+    25%{
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    50%{
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+    75%{
+        left: -15px;
+        top: 100%;
+    }
+    90%{
+        left: -15px;
+        top: -10px;
+    }
+    100%{
+        left: 10%;
+        top: -10px;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: infinite 3s spinwhite2;
+}
+
+@keyframes spinwhite2 {
+    0%{
+        right: 10%;
+        bottom: -10px;
+    }
+    25%{
+        right: calc(100% - 30px);
+        bottom: -10px;
+    }
+    50%{
+        right: calc(100% - 30px);
+        bottom: 100%;
+    }
+    75%{
+        right: -15px;
+        bottom: 100%;
+    }
+    90%{
+        right: -15px;
+        bottom: -10px;
+    }
+    100%{
+        right: 10%;
+        bottom: -10px;
+    }
+}
